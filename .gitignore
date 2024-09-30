@@ -1,4 +1,5 @@
 node_modules/
+databases/vols/
 
 # Logs
 logs/
