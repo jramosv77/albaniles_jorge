@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "bd:user":"node databases/query.js",
+    "bd:user": "node databases/query.js",
     "docker-postgresql-stop": "docker stop postgres",
-		"docker-postgresql-run": "docker run  --rm -v ./databases/vols:/var/lib/postgresql/data --name postgres -e POSTGRES_PASSWORD=localpassword -p 5432:5432 -d postgres"
+    "docker-postgresql-run": "docker run  --rm -v ./databases/vols:/var/lib/postgresql/data --name postgres -e POSTGRES_PASSWORD=localpassword -p 5432:5432 -d postgres"
   },
   "keywords": [],
   "author": "",
