@@ -48,19 +48,31 @@ const query = async () => {
 
   //create user
 
-  const user = await db.User.create({
-      name: "Alex",
-      surname: "Zee",
-  })
-  console.log("New User Added:", JSON.stringify(user, null, 2));
+  // const user = await db.User.create({
+  //     name: "Alex",
+  //     surname: "Zee",
+  // })
+  // console.log("New User Added:", JSON.stringify(user, null, 2));
 
-  //create task
-  /* const task = db.Task.create({
-    title: 'task1',
+
+  //create status_task
+  const status_task = await db.StatusTask.create({
+    name: 'ready',
+    description: 'listo para hacer',
   });
-  task
-    .then((id) => console.log("Task's auto-generated ID:", id))
-    .catch((error) => console.log("Error", error)); */
+  console.log(status_task);
+  
+  
+  //create task
+  const task = await db.Task.create({
+    title: 'task1',
+    description: 'prueba',
+    status_id: status_task.id,
+  })
+  console.log("Task's auto-generated ID:", task.id);
+
+  
+
 };
 
 query();

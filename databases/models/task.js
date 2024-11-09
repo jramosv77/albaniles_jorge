@@ -14,16 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       Task.belongsTo(models.StatusTask, {
         foreignKey: 'status_id',
       });
-      Task.belongsTo(models.Project, {
-        foreignKey: 'project_id',
-      });
-    };
+    }
   }
   Task.init({
     title: DataTypes.STRING,
     description: DataTypes.STRING,
-    status_id: DataTypes.INTEGER,
-    project_id: DataTypes.INTEGER,
     start_date: DataTypes.DATE,
     end_date: DataTypes.DATE
   }, {
