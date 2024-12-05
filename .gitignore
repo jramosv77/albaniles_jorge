@@ -1,4 +1,7 @@
 node_modules/
+databases/vols/
+database/clase1/compose-postgres/pgadmin/
+database/clase1/compose-postgres/postgres/
 
 # Logs
 logs/

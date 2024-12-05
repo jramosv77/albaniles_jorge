@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: 'airbnb-base',
   parserOptions: {
@@ -10,7 +11,4 @@ module.exports = {
   },
   rules: {},
   plugins: ['jest'],
-  env: {
-    'jest/globals': true,
-  },
 };
