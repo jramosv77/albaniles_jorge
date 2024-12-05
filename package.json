@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest",
-    "bd:user": "node databases/query.js",
-    "docker-postgresql-stop": "docker stop postgres",
-    "docker-postgresql-run": "docker run  --rm -v ./databases/vols:/var/lib/postgresql/data --name postgres -e POSTGRES_PASSWORD=localpassword -p 5432:5432 -d postgres"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +14,6 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^28.8.3",
-    "jest": "^29.7.0",
-    "sequelize-cli": "^6.6.2"
-  },
-  "dependencies": {
-    "pg": "^8.13.0",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.37.3"
+    "jest": "^29.7.0"
   }
 }
