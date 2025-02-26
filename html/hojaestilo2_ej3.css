@@ -1,0 +1,30 @@
+article {
+    width: 24%;
+    margin: 0 auto;
+    border: 4px groove hsl(60, 25%, 60%);
+}
+footer {
+    width: 24%;
+    margin: 3% auto;
+}
+a[href="www.google.com"] {
+    font-family: Impact;
+    text-transform: capitalize;
+    text-size-adjust: 50%;
+    color: #2642bd;
+    letter-spacing: 10px;
+}
+a[href^="#"] {
+    color: #2642bd;
+    letter-spacing: 5px;
+}
+footer > p {
+    border: dashed black;
+    border-width: 2px 5vw 1em 10px;
+}
+li:first-of-type + li + li {
+    font-family: Verdana;
+    font-size: 250%;
+    letter-spacing: 20px;
+    text-shadow: 2px 1px yellow;
+}

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+     
+}
+
+.principal {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F5E8;
+    padding: 1em;
+    text-align: left;
+    color: rgb(136, 71, 46);
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+
+.desplegable {
+    position: relative;
+    display: inline-block;    
+}
+
+.botondesplegable {
+    background-color: rgb(136, 71, 46);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-style: oblique;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8vw;
+}
+
+.contenidodesplegable {
+    display: none;
+    position: absolute;
+    right: 8vw;
+    background-color: #F9F5E8;
+}
+
+.contenidodesplegable a {
+    color: rgb(136, 71, 46);
+    padding: 0.75rem 1rem;
+    display: block;
+    text-align: left;
+
+}
+
+.contenidodesplegable a:hover {
+    background-color: #f1f1f1;
+}
+
+.desplegable:hover .contenidodesplegable {
+    display: block;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    gap: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F9F5E8;
+}
+
+@keyframes desenfoqueinicial {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+#columnaizquierda {
+    background-color: #F9F5E8;
+    background-image: url("../img/senderistas.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    text-align: center;
+    margin-left: 1em;
+    color: rgb(136, 71, 46);
+    animation: desenfoqueinicial 3s ease-out;
+    box-shadow: 3px 3px 15px rgba(136, 71, 46, 0.3);
+
+}
+
+#columnaizquierda nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav p {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav p::first-letter {
+    font-size: 2em;
+}
+
+nav a {
+    color: rgb(136, 71, 46);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: transform 1s ease;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    transform: scale(1.15) perspective(1rem);
+    color: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    background-color: rgb(136, 71, 46);
+}
+#columnaderecha {
+    background-color: #F9F5E8;
+    background-image: url("../img/ciclista.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    text-align: center;
+    color: rgb(136, 71, 46);
+    animation: desenfoqueinicial 1s ease-in-out;
+    box-shadow: 3px 3px 15px rgba(136, 71, 46, 0.3);
+    
+}
+
+.seccion {
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    width: 100%;
+    height: 100%;
+    background-color: #F9F5E8;
+    background-image: url("../img/imagenfondopineta.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    padding: 0;
+    margin: 0;
+    gap: 0em;
+    animation: desenfoqueinicial 4s ease-in-out;
+}
+
+.seccion > article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color:  rgb(134, 125, 113);
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;  
+    margin-inline: 1em; /* o margin: 0 1em; */
+    padding-inline: 1em; /* añade padding a ambos lados */
+}
+
+.articulo p {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+.articulo img {
+    max-width: 75%; 
+    margin-top: 10px; 
+}
+
+.pie {
+    background-color: #F9F5E8;
+    padding: 0.5em;
+    text-align: left;
+    color: rgb(136, 71, 46);
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}

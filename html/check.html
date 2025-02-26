@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de posición sticky</title>
+    <style>
+        @media (min-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+    </style>
+</head>
+<body>
+  <button id="xx"> click me </button>
+  <h1 id="resultado"> .... </h1>
+  <script>let el = document.getElementById("xx")
+    el.addEventListener("click", myFunc);
+
+    function myFunc() {
+        let el2 = document.getElementById("resultado")
+        el2.innerHTML = 'Ha funcionado!';
+    }</script>
+</body>
+</html>

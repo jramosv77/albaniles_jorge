@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener múltiplos de un número</title>
+</head>
+<body style="background-color:rgb(163, 235, 211);">
+<body>
+    <h1>Busca los múltiplos del número que desees</h1>
+
+    <h2>Define el tamaño del array y número al que calcular sus múltiplos</h2>
+
+    <div id="response"></div>
+    <button onclick="inputusuario()">Obtén multiplos</button>
+        <!--contenido de archivo javascript con la funcionalidad que permite recibir input del usuario -->
+    <script>
+        function inputusuario() {
+  let longitud = parseInt(prompt("Indica el tamaño del array:"), 10);
+  let numero = parseInt(prompt("Indica el número que va a mostrar sus múltiplos:"), 10);
+
+  function multiplesarray(longitud, numero = 1) {
+    let arraymultiplos = [];
+    let longitudenteropositivo = Number.isInteger(longitud) && longitud >= 0;
+    let numeroenteropositivo = Number.isInteger(numero) && numero >= 0;
+    if (!longitudenteropositivo || !numeroenteropositivo) {
+      throw new Error("Introduce un número entero positivo");
+    } else {
+      for (let posicion = 0; posicion < longitud; posicion++) {
+        arraymultiplos.push(numero * (posicion + 1));
+      }
+      return arraymultiplos;
+    }
+  }
+  let resultado = multiplesarray(longitud, numero);
+  document.getElementById("response").innerHTML = resultado.join(", ");
+}
+    </script>
+</body>
+</html>

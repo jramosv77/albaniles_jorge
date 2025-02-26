@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Index.css">
+        <title>Descubre Pineta</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="img/montana16x16.png" media="(max-width: 600px)">
+        <link rel="icon" type="image/png" sizes="24x24" href="img/montana24x24.png" media="(min-width: 601px) and (max-width: 1200px)">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/montana32x32.png" media="(min-width: 1201px)">
+    </head>
+
+    <body>
+
+        <div class="principal">
+            <header class="cabecera">Descubre Pineta</header>
+            <main class="contenido">                
+                
+                <form action="bienvenida.html" method="get">
+                    <h2>Iniciar sesión</h2>
+                    <label for="username">Usuario(email):</label>
+                    <input type="text" id="username" name="username" pattern=".*@.*\.com$" title="Debe ser un email" required>
+                    <br><br>
+                    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    
+                    <button type="submit">Iniciar sesión</button>
+                    <br><br>
+                    
+                    <a href="recuperacion.html">Recuperar contraseña</a>
+                </form>
+            </main>
+            <footer class="pie">Patrocinado por:
+                <ul style="list-style-type:circle">
+                    <li>Federación aragonesa de montaña</li>
+                    <li>Federación Española de Deportes de Montaña y Escalada (FEDME)</li>
+                    <li>Asociación Empresarial y Turística Sobrarbe</li>
+                    
+                </ul>
+            </footer>
+        </div>
+
+    </body>
+
+</html>

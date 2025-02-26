@@ -1,0 +1,37 @@
+img {
+    width: 100%;
+    height: auto;
+}
+#segunda {
+    filter: sepia(50%) blur(2px);
+}
+#tercera {
+    filter: invert(45%);
+}
+#cuarta {
+    filter: saturate(65%) drop-shadow(4px 4px 4px rgb(27, 27, 27));
+}
+#quinta {
+    filter: opacity(20%);
+}
+#sexta {
+    filter: sepia(300%);
+}
+#septima {
+    filter: hue-rotate(70deg)
+}
+#octava {
+    filter: blur(7px);
+}
+#novena {
+    filter: drop-shadow(6px 10px rgba(221, 77, 77, 0.575))
+}
+#decima {
+    filter: grayscale(50%)
+}
+#undecima {
+    filter: brightness(13%) saturate(20%);
+}
+#duodecima {
+    filter:contrast(250%)
+}

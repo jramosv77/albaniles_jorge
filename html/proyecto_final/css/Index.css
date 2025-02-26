@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;     
+}
+
+
+
+.principal {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.cabecera {
+    background-color: #F9F5E8;
+    padding: 0.5em;
+    text-align: left;
+    color: rgb(136, 71, 46);
+    font-size: 2.8rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/imagenfondopineta.jpg");
+    background-size: cover;
+    background-position: top center; 
+    background-repeat: no-repeat;
+    color: #333;
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(136, 71, 46);
+    font-weight: bold;
+    gap: 2em;
+    padding: 2em;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5em;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+form h2 {
+    margin-bottom: 1em;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(136, 71, 46);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: rgb(136, 71, 46);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Añade la transición */
+}
+
+button:hover {
+    background-color: #9b5837;
+    transform: scale(1.07);
+}
+
+a {
+    color: rgb(136, 71, 46);
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.pie {
+    background-color: #F9F5E8;
+    padding: 0.5em;
+    text-align: left;
+    color: rgb(136, 71, 46);
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+#consulta {
+    width: 100%;  /* Ajusta el ancho a todo el formulario */
+    height: 100px; /* Ajusta la altura según prefieras */
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#mapa {
+    border: white 8px outset; /* Ajusta el color y grosor */
+    border-radius: 8px;     /* Añade esquinas redondeadas */
+}
+

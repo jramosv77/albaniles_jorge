@@ -1,0 +1,38 @@
+Table, td, th {
+    border: black 1px solid;
+    text-align: center;
+    font-family: Arial;
+   }
+
+.horarios {
+    background-color: rgb(189, 241, 69);
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.dias {
+    background-color: rgb(241, 223, 172);
+    font-size: 1.2em;
+}
+
+.daily_scrum {
+    background-color: lightpink;
+    font-style: italic;
+    font-size: 1.2em;
+}
+#almuerzo {
+    background-color: yellow;
+    color: rgb(124, 124, 124);
+    font-size: 1.2em;
+}
+
+.formacion {
+    background-color: rgb(179, 215, 228);
+    font-size: 0.7em;
+}
+.sprint {
+    background-color: red;
+    font-style: italic;
+    font-size: 1.2em;
+}
+

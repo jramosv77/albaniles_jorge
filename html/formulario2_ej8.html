@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar accesorios</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: lemonchiffon;">
+    <h1>Selecciona los accesorios para tu vehículo</h1>
+           
+        <div>
+            <label>Personaliza tu vehículo:</label><br>
+            <input type="checkbox" id="pantalla tactil" name="accesorio" value="Pantalla tactil">
+            <label for="pantalla tactil">Pantalla táctil</label><br>
+            <input type="checkbox" id="subwoofer" name="accesorio" value="Sistema de sonido de alta calidad">
+            <label for="subwoofer">Sistema de sonido de alta calidad</label><br>
+            <input type="checkbox" id="camaras" name="accesorio" value="Camaras de aparcamiento">
+            <label for="camaras">Cámaras de aparcamiento</label>
+        </div>
+        
+        <div>
+            <label>Tipo de llantas:</label><br>
+            <input type="radio" id="racing" name="llantas" value="racing" required>
+            <label for="racing">Racing</label><br>
+            <input type="radio" id="4x4" name="llantas" value="4x4">
+            <label for="4x4">4x4</label><br>
+            <input type="radio" id="city" name="llantas" value="Estándar">
+            <label for="city">Estándar</label>
+        </div>
+        
+        <div>
+            <label for="tamanollantas">Tamaño de llantas (pulgadas):</label>
+            <input type="number" id="tamanollantas" name="tamanollantas" min="14" max="22" step="1" value="16" required>
+        </div>
+
+        <div>
+            <label for="tapizado">Personalización tapizado:</label>
+            <input type="text" id="tapizado" name="interior" placeholder="Cuero, gamuza, etc.">
+        </div>
+        
+        <div>
+            <label for="pintura">Color de pintura:</label>
+            <input type="color" id="pintura" name="pintura" value="#000000">
+        </div>
+
+        <input type="submit" value="Confirmar selección">
+    </form>
+</body>
+</html>

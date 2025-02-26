@@ -1,0 +1,70 @@
+img {
+    width: 100%;
+    height: auto;
+}
+#segunda:hover {
+    filter: sepia(50%) blur(2px);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-in;
+}
+#tercera:hover {
+    filter: invert(45%);
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+#cuarta:hover {
+    filter: saturate(65%) drop-shadow(4px 4px 4px rgb(27, 27, 27));
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+#quinta:hover {
+    filter: opacity(20%);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#sexta:hover {
+    filter: sepia(300%);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+}
+#septima:hover {
+    filter: hue-rotate(70deg);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+#octava:hover {
+    filter: blur(7px);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-in;
+}
+#novena:hover {
+    filter: drop-shadow(6px 10px rgba(221, 77, 77, 0.575));
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+#decima:hover {
+    filter: grayscale(50%);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+#undecima:hover {
+    filter: brightness(13%) saturate(20%);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-in;
+}
+#duodecima:hover {
+    filter:contrast(250%);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}

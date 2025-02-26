@@ -1,0 +1,38 @@
+#mi_temática {
+    background-color: aquamarine;
+    outline-color: rgb(14, 13, 13);
+    text-shadow: 50px black;
+    border: 3px 5vw 9em solid;
+    margin: 0 45%;
+    width: 8%;
+    font-size: 300%;
+}
+#bloque_titulo_receta {
+    font-style: oblique;
+    font-family: fantasy;
+    color: darkslategrey;
+    height: 10cm;
+    background-image: url("pizzaconpina.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    }
+.copyright {
+    text-align: center;
+    text-decoration-color: lemonchiffon;
+    text-emphasis-color: lavender;
+    box-shadow: black;
+}
+.cabeceras {
+    text-decoration: wavy overline lime;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+#mi_temática::after {
+    content: "!!!";
+    background-color: aquamarine;
+}
+.copyright::before {
+    content: "\1F6AB"; 
+    margin-right: 10px;
+}
